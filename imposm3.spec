@@ -1,9 +1,5 @@
 %global commit 0807c33eaaa5146d3f8088bf23e058524055c4fd
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%define pg_version 9.3
-%define pg_pkg 93
-%define pgis_version 2.1
-
 
 Name:		imposm3	
 Version:	3.0.0.%{shortcommit}
@@ -35,7 +31,6 @@ The development of Imposm 3 was sponsored by Omniscale and development will cont
 %prep
 
 %build
-#%setup -qn %{name}-%{commit} 
 
 %install
 mkdir -p %{name}
@@ -46,7 +41,6 @@ pushd src/imposm3
 git checkout %{commit}
 popd
 go get imposm3
-#rm -rf %{buildroot}
 go install %{name}
 mkdir -p %{buildroot}/usr/bin
 install -m 0755 bin/%{name} %{buildroot}/usr/bin/%{name}
@@ -79,9 +73,4 @@ fi
 %changelog
 * Mon Jul 14 2014 Norbert Varzariu <root@loomsen.org> - 3.0.0.0807c33-1
 - initial build
-
-* Mon Jul 14 2014 Norbert Varzariu <root@loomsen.org> - 3.0.0.0807c33-1
-- initial build
-
-
 

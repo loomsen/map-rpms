@@ -2,7 +2,7 @@
 %define version 1.7.1
 %define unmangled_version 1.7.1
 %define unmangled_version 1.7.1
-%define release 1%{?dist}cm
+%define release 1%{?dist}
 %define _unitdir /usr/lib/systemd/system
 %define lowname mapproxy
 
@@ -81,7 +81,7 @@ fi
 %{_datarootdir}/%{name}/*
 
 %changelog
-* Mon Jul 14 2014 Norbert Varzariu <root@loomsen.org> - 1.7.1-1cm
+* Mon Jul 14 2014 Norbert Varzariu <nv@tcsys.de> - 1.7.1-1cm
 - initial build
 
 
