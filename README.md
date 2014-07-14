@@ -1,4 +1,4 @@
-omniscale-rpms
+map-rpms
 ==============
 
-RPMs for the omniscale projects imposm3 and mapproxy
+RPMs for imposm3 and mapproxy
