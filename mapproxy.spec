@@ -3,7 +3,6 @@
 %define unmangled_version 1.7.1
 %define unmangled_version 1.7.1
 %define release 1%{?dist}
-%define _unitdir /usr/lib/systemd/system
 %define lowname mapproxy
 
 Summary: An accelerating proxy for web map services
